@@ -26,7 +26,7 @@ func getIcon(command string) (string, string) {
 	case "cargo":
 		return "rust", "crab crab crab"
 	}
-	return "bash", "the bourne again shell"
+	return "fish", ""
 }
 
 var startTime = time.Now()
@@ -43,7 +43,7 @@ func updateStatus(command string) {
 		LargeImage: icon,
 		LargeText:  iconText,
 		SmallImage: "bash",
-		SmallText:  "the bourne again shell",
+		SmallText:  "The friendly interactive shell",
 	})
 	if err != nil {
 		fmt.Println("couldn't publish discord rich status", err)
@@ -94,7 +94,7 @@ func main() {
 	}()
 
 	homedir, _ := os.UserHomeDir()
-	err = watcher.Add(filepath.Join(homedir, ".bash_history"))
+	err = watcher.Add(filepath.Join(homedir, ".local/share/fish/fish_history"))
 	if err != nil {
 		panic(err)
 	}

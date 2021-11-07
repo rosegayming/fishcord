@@ -4,18 +4,7 @@ discord rich presence for bash
 
 ## Installation
 
-`go get github.com/deletescape/bashcord@latest`
-
-## Setup
-
-Put the following into your `.bashrc`, this makes sure your bash history file is immediately updated after every command
-
-```bash
-shopt -s histappend
-shopt -s cmdhist
-export HISTCONTROL=ignoreboth
-PROMPT_COMMAND='history -a;history -n'
-```
+`go get github.com/rosegayming/fishcord@latest`
 
 ## Running
 

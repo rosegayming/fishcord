@@ -1,4 +1,4 @@
-module github.com/deletescape/bashcord
+module github.com/rosegayming/fishcord
 
 go 1.17
 
