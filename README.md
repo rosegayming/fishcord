@@ -1,11 +1,12 @@
-# bashcord
+# fishcord
 
-discord rich presence for bash
+Discord rich presence for fish.  
+A fork of bashcord to work with fish, and with some minor preference changes
 
 ## Installation
 
-`go get github.com/rosegayming/fishcord@latest`
+`go install github.com/rosegayming/fishcord@latest`
 
 ## Running
 
-Literally just run `bashcord`. If you wanna go wild with it you could probably make it a system service so it runs on boot.
+Literally just run `fishcord`. Writing a service script is left as an exercise to the reader. 
